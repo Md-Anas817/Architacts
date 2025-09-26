@@ -136,6 +136,77 @@ main{
     font-weight: 500;
 }
 
+
+
+ /* some fakts reletad styles */
+ .fakts-cotainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: space-around; */
+ }
+ .fakt{
+    border: 1px solid #FF900E;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+ }
+ .fakts-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #131313;
+ }
+ .test-light-gray{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #727272;
+    width: 540px;
+ }
+ .fakt-icon{
+    width: 40px;
+    width: 40px;
+ }
+ .fakt-numbre{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #424242;
+    margin: 10px;
+ }
+ .fakt-name{
+    font-size: 1.25rem;
+    font-weight: 650;
+    color: #727272 ;
+    margin: 0;
+ }
+
+
+
+ /* sponsore relayted style */
+ .sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center  ;
+ }
+ .section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+ }
+ .section-content{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #727272;
+ }
+
+
+ .sponsor-companyes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+ }
+ .sponsor-companyes img{
+    filter: grayscale(100%);
+ }
+
 /* Small Devise */
 @media screen and (max-width: 576px){
     .navber{
@@ -173,6 +244,25 @@ main{
     .team-img{
         width: 100%;
     }
+
+/* some fakts reletad styles */
+    .test-light-gray{
+        width: 100%;
+    }
+    .fakts-cotainer{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        gap: 20px;
+        justify-items: center;
+    }
+
+
+/* sponsore relayted style */
+    .sponsor-companyes{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        row-gap: 30px;
+    }
 }
 
 
@@ -191,5 +281,24 @@ main{
     }
     .team-img{
         width: 100%;
+    }
+
+
+/* some fakts reletad styles */
+    .fakts-cotainer{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 40px;
+    }
+    .fakt{
+        width: 100%;
+    }
+
+
+/* sponsore relayted style */
+    .sponsor-companyes{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 40px;
     }
 }
