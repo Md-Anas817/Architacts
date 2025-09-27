@@ -103,6 +103,7 @@ main{
 .teams{
     display: flex;
     align-items: center;
+    padding: 0px 60px;
 }
 .team-img-container{
     display: grid;
@@ -136,6 +137,75 @@ main{
     font-weight: 500;
 }
 
+ /* <!-- Features will you enjoy --> */
+ .feature{
+    display: flex;
+    gap: 140px;
+ }
+ .feature-div{
+    width: 50%;
+ }
+ .feature-img{
+    width: 50%;
+ }
+ .feature-img img{
+    width: 100%;
+ }
+ .section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    max-width: 460px;
+    color: #131313;
+ }
+ .features-content{
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 580px;
+    color: #727272;
+ }
+
+
+ .feature-card{
+    padding: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 10px;
+ }
+ .feature-card .features-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#131313;
+    margin: 5px;
+ }
+ .feature-content{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #727272;
+    max-width: 500px;
+    margin: 5px;
+ }
+
+
+ #exparience-bagth{
+    width: 342px;
+    height: 200px;
+    border: none;
+    background-color: #FF900E;
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: -80px;
+    margin-left: -100px;
+ }
+ #exparience-year{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #FFFFFF;
+ }
+ #exparienvnce-des{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+ }
 
 
  /* some fakts reletad styles */
@@ -206,6 +276,20 @@ main{
  .sponsor-companyes img{
     filter: grayscale(100%);
  }
+ /* footer styles */
+ footer{
+    background-color: #FFF4E7;
+    max-width: 1200px;
+    height: 100px;
+    margin: 50px auto;
+    align-content: center;
+ }
+ .footer-content{
+    font-size: 1rem;
+    color:#424242;
+    font-weight: 500;
+    text-align: center;
+ }
 
 /* Small Devise */
 @media screen and (max-width: 576px){
@@ -245,6 +329,39 @@ main{
         width: 100%;
     }
 
+/* <!-- Features will you enjoy --> */
+
+
+    .feature{
+        flex-direction: column;
+    }
+    #exparience-bagth{
+        width: 200px;
+        height: 100px;
+        border: none;
+        background-color: #FF900E;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #exparience-year{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    #exparienvnce-des{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    .feature-div{
+        width: 100%;
+    }
+    .feature-img{
+        width: 100%;
+        text-align:  center;
+    }
 /* some fakts reletad styles */
     .test-light-gray{
         width: 100%;
@@ -282,8 +399,36 @@ main{
     .team-img{
         width: 100%;
     }
-
-
+/* <!-- Features will you enjoy --> */
+     .feature{
+        flex-direction: column;
+    }
+    #exparience-bagth{
+        width: 200px;
+        height: 100px;
+        border: none;
+        background-color: #FF900E;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+    #exparience-year{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    #exparienvnce-des{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    .feature-div{
+        width: 100%;
+    }
+    .feature-img{
+        width: 100%;
+    }
 /* some fakts reletad styles */
     .fakts-cotainer{
         grid-template-columns: repeat(2,1fr);
